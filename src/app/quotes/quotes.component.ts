@@ -21,6 +21,12 @@ export class QuotesComponent implements OnInit {
        'John Wanjema',' Audre Leon', new Date()),
   ]
   
+  deleteQuote(deleteit,index){
+    if (deleteit){
+        this.quotes.splice(index,1);
+        }
+        }
+
   constructor() { }
 
   ngOnInit() {
