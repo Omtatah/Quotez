@@ -27,6 +27,11 @@ export class QuotesComponent implements OnInit {
         }
         }
 
+        toogleDetails(index){
+          this.quotes[index].showInformation=!
+          this.quotes[index].showInformation;
+        }
+
   constructor() { }
 
   ngOnInit() {
