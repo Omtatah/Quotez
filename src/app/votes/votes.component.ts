@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./votes.component.css']
 })
 export class VotesComponent implements OnInit {
-  likes :number=0;
-  dislikes: number=0;
+  likes: number = 0;
+  dislikes: number = 0;
 
-  likeBtn(){
+  likeBtn() {
     this.likes++;
   }
-  dislikeBtn(){
+  dislikeBtn() {
     this.dislikes++;
   }
   constructor() { }
