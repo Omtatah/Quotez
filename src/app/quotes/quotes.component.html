@@ -10,7 +10,7 @@
            <!--Button to toogle hide and show quote details-->
             <button  (click)='toogleDetails(i)'>▼</button>
     
-          <!-- <votes-box></votes-box> -->
+          <votes-box></votes-box>
     
             <!--Obtains details about a quote from quote-details-->
             <app-quotes-details *ngIf="quote.showInformation"
@@ -18,7 +18,7 @@
         </div>
         <h4>Make new quote</h4>
       <!-- Refers to quotes-form.html to display form -->
-     <!-- <app-quotes-form (addQuotes)='addNewQuotes($event)'></app-quotes-form> -->
+     <app-quotes-form (addQuotes)='addNewQuotes($event)'></app-quotes-form>
         </div>
     
     </div>
