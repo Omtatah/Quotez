@@ -22,7 +22,6 @@ import { VotesComponent } from './votes/votes.component';
   ],
   imports: [
     BrowserModule,
-    NgModule,
     FormsModule,
   ],
   providers: [],
