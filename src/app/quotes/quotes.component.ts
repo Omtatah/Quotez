@@ -21,18 +21,18 @@ export class QuotesComponent implements OnInit {
       'John Wanjema', ' Audre Leon', new Date()),
   ]
 
-  deleteQuote(deleteit:any, index:any) {
+  deleteQuote(deleteit: any, index: any) {
     if (deleteit) {
       this.quotes.splice(index, 1);
     }
   }
 
-  toogleDetails(index:any) {
+  toogleDetails(index: any) {
     this.quotes[index].showInformation = !
       this.quotes[index].showInformation;
   }
 
-  addNewQuotes(quote:any) {
+  addNewQuotes(quote: any) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
     quote.postDate = new Date(quote.postDate)
